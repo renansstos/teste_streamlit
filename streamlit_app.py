@@ -12,7 +12,7 @@ st.image(image, caption="", use_column_width=True)
 # Create a 3x3 matrix input form
 matrix = st.beta_container()
 with matrix:
-    st.write("Enter the values for the 3x3 matrix below:")
+    st.write("Enter the values for the decision matrix below, with each line representing an alternative and each column a criterion:")
     a11, a12, a13 = st.beta_columns(3)
     a21, a22, a23 = st.beta_columns(3)
     a31, a32, a33 = st.beta_columns(3)
