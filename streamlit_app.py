@@ -4,7 +4,7 @@ import numpy as np
 st.title("Eigenvalues Calculator")
 
 # Create a 3x3 matrix input form
-a1, b1, c1, a2, b2, c2, a3, b3, c3 = st.beta_columns(9)
+a1, b1, c1, a2, b2, c2, a3, b3, c3 = st.beta_columns(3)
 with a1:
     a11 = st.number_input(label='', key='a11')
 with b1:
