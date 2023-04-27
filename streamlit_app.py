@@ -1,7 +1,13 @@
 import streamlit as st
 import numpy as np
+from PIL import Image
 
+# set up the UI
 st.title("TOPSIS MCDM Method")
+
+# add an image
+image = Image.open(r"Logo.png")
+st.image(image, caption="", use_column_width=True)
 
 # Create a 3x3 matrix input form
 matrix = st.beta_container()
