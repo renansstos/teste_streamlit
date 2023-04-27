@@ -68,7 +68,11 @@ for i, alt in enumerate(alt_names):
     result.append((alt, C[i]))
 result = sorted(result, key=lambda x: x[1], reverse=True)
 
+ranking = []
+for i in range(len(alt_names)):
+    ranking.append((result[i][0], [x[0] for x in result].index(result[i][0]) + 1))
+
 st.write("The final ranking is:")
-for alt, rank in result:
-    st.write(f"{alt}: {rank:.4f}")
+for alt, rank in ranking:
+    st.write(f"{alt}: {rank:.0f}")
 
